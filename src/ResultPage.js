@@ -65,7 +65,7 @@ top:0;
 .monster-name{
     color: #FFF;
     font-family: 'Noto Sans KR', sans-serif;    
-    font-size: 2em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -82,7 +82,7 @@ top:0;
 function ResultPage(){
     const location = useLocation();
     const { pokemonData } = location.state || { img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/39.svg" ,name: "푸린"};
-    
+    const navigate = useNavigate();
     return(
 
         <ResultPageStyle>
@@ -93,10 +93,11 @@ function ResultPage(){
                     <img src={pokemonData.img} className='monsterImg'></img>
                 </div>
                 
-                
-                <div className='monster-name-box'>
+                <div className='monster-name-box' onClick={()=>{
+                    navigate('/adventure', { state: {pokemonData} });
+                }}>
                     <img src={btnBG} className='result-textBox'></img>
-                    <div className='monster-name'>{pokemonData.name}</div>
+                    <div className='monster-name' >{pokemonData.name}와(과) 모험을 떠나자!</div>
                 </div>
                 <Link to='/' className='cancel'>
                     <img src='/img/cancelBtn.png' ></img>

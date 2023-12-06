@@ -24,7 +24,7 @@ width:100vw;
 }
 .logo{
     padding:5%;
-    width:60vw;
+    width:70%;
     height:auto;
     
 }
@@ -38,10 +38,11 @@ width:100vw;
     
     
   }
-  .image-container .doctor-img{
-        object-fit:cover;
-    display: inline-block;
+  .doctor-img{
+    width:130%;
+    height:100%;
   }
+
   .title-text{
     padding-top:10%;
   }

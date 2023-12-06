@@ -6,6 +6,7 @@ import './App.css';
 import StartPage from './StartPage';
 import MainPage from './MainPage';
 import ResultPage from './ResultPage';
+import Adventure from './Adventure';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<StartPage />} />
         <Route path="/draw" element={<MainPage/>} />
         <Route path="/result" element={<ResultPage/>} />
+        <Route path="/adventure" element={<Adventure/>} />
       </Routes>
       
       

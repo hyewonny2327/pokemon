@@ -94,7 +94,7 @@ function MainPage(){
     useEffect(()=>{
         const fetchData = async () => {
             console.log('fetch');
-            const maxPokemonNumber = 151;
+            const maxPokemonNumber = 1000;
             const randomIndex = Math.floor(Math.random() * maxPokemonNumber) + 1;
             
             try {
