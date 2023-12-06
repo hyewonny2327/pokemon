@@ -81,7 +81,7 @@ top:0;
   
 function ResultPage(){
     const location = useLocation();
-    const { pokemonData } = location.state || {};
+    const { pokemonData } = location.state || { img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/39.svg" ,name: "푸린"};
     
     return(
 

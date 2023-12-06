@@ -67,7 +67,7 @@ width:100vw;
   
 function MainPage(){
     const [rotationDegree, setRotationDegree] = useState(0);
-    const [pokemonData, setPokemonData] = useState({ img: '' ,name: ''});
+    const [pokemonData, setPokemonData] = useState({ img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/39.svg" ,name: "푸린"});
 
     const drawBtnRef = useRef(null);
     const navigate = useNavigate();
@@ -130,7 +130,6 @@ function MainPage(){
                         <img src={drawBtn} className='draw-btn' ></img>
                         <img src={'/img/btn.png'} className='draw-btn move' ref={drawBtnRef} onClick={rotateImage}></img>
                     </div>
-
                 </div>
                 <div className='btn-text'>버튼을 돌려주세요~</div>
             </div>

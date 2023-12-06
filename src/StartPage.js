@@ -24,23 +24,22 @@ width:100vw;
 }
 .logo{
     padding:5%;
-    width:70%;
-    margin-top:20%;
+    width:60vw;
+    height:auto;
+    
 }
 .image-container{
     width:100%;
     align-items: center;
-    overflow: hidden;
     display:flex;
     flex-direction:column;
     position:relative;
+    justify-content:center;
     
     
   }
   .image-container .doctor-img{
-    
-    // background-size:cover;
-    object-fit:cover;
+        object-fit:cover;
     display: inline-block;
   }
   .title-text{
@@ -48,7 +47,7 @@ width:100vw;
   }
   .start-btn{
     position:fixed;
-    bottom:136px;
+    bottom:100px;
   }
   .start-btn:hover{
     cursor:point;
